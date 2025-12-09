@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Portfolio of Victor Essine Obioha — IT Freelancer, Front-End Developer, and Digital Marketer building modern, responsive websites and data-driven strategies." />
+    <title>My Portfolio</title>
+
+    <!-- Emoji as favicon -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='14'>👨🏽‍💻</text></svg>">
+
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Styles -->
+    <style>
+        /* Global font family */
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-900 text-white scroll-smooth">
+    <!-- Header -->
+    <header
+        class="fixed top-0 left-0 w-full z-50 px-6 md:px-20 py-4 flex bg-[#1f2937] justify-between items-center shadow-md">
+
+        <!-- Logo -->
+        <a href="#home"
+            class="text-2xl sm:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-cyan-400 to-yellow-400 bg-clip-text text-transparent">
+            Projects
+        </a>
+
+        <!-- Mobile Menu Icon -->
+        <i id="menu-btn" class="bx bx-menu text-4xl md:hidden cursor-pointer text-cyan-300"></i>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex space-x-6 text-lg">
+            <a href="index.html" class="text-cyan-300 hover:text-cyan-400 font-semibold flex items-center group">
+                <!-- Arrow that moves left -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor"
+                    class="w-5 h-5 transform transition-transform duration-300 group-hover:-translate-x-2 mr-1">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 12H5m0 0l6 6m-6-6l6-6" />
+                </svg>
+                Back Home
+            </a>
+        </nav>
+
+        <!-- Mobile Dropdown Menu -->
+        <nav id="mobile-menu"
+            class="hidden absolute top-full left-0 w-full bg-gray-800 flex-col items-center text-lg space-y-4 py-4 transition-all duration-300 md:hidden">
+            <a href="index.html" class="block text-cyan-300 hover:text-cyan-400 font-semibold">Home</a>
+        </nav>
+    </header>
+
+    <!-- Script: Toggle Mobile Menu -->
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+            menuBtn.classList.toggle("bx-x"); // Change menu icon to X
+        });
+    </script>
+    <main id="main-content" class="flex-grow mt-20">
+
+        <!-- Projects Section -->
+        <section id="project" class="py-20 px-6 md:px-16 mt-16">
+            <!-- Heading -->
+            <h2 class="text-3xl sm:text-4xl font-bold text-center text-white mb-8">
+                <span class="border-b-4 border-cyan-400 text-cyan-400">Featured Projects</span>
+            </h2>
+            <p class="text-center text-gray-300 mb-12">
+                Explore my full portfolio of design projects. Click any project to view
+                details or access the repository.
+            </p>
+
+            <!-- Navigation Links (Desktop Centered) -->
+            <nav class="hidden md:flex justify-center w-full text-lg">
+                <ul class="flex gap-4 mb-8">
+                    <li>
+                        <a href="#codes"
+                            class="px-2 py-1 border border-cyan-400 text-cyan-400 rounded-full hover:bg-cyan-400 hover:text-white transition-colors">
+                            Codes
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#wordpress"
+                            class="px-2 py-1 border border-cyan-400 text-cyan-400 rounded-full hover:bg-cyan-400 hover:text-white transition-colors">
+                            WordPress
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Codes Section -->
+            <section id="codes" class="py-12 px-4">
+                <!-- Grid Container -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+                    <!-- Project Card 1 -->
+                    <div class="project-card rounded-xl overflow-hidden bg-slate-800">
+
+                        <!-- Image Section -->
+                        <div class="relative w-full h-52 group">
+                            <img src="Images/My-Portfolio.png" alt="Screenshot of My Portfolio Website"
+                                class="w-full h-full object-cover" />
+
+                            <!-- Overlay -->
+                            <div
+                                class="absolute inset-0 bg-gradient-to-b from-black/10 to-cyan-500 flex flex-col justify-center items-center text-center p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                <h4 class="text-xl text-white font-semibold mb-1">My Portfolio</h4>
+                                <p class="text-[15px] text-white mb-12">My Experience, Skills, & Projects.</p>
+
+                                <!-- External Link Icon -->
+                                <a href="https://victor-essine.vercel.app/" target="_blank"
+                                    aria-label="View My Portfolio Live"
+                                    class="flex items-center justify-center w-7 h-7 border border-white/40 rounded-md hover:bg-white/50 transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="2" stroke="white" class="w-3 h-3">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M18 13v6a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 3h6v6m0-6L10 14" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Text Section -->
+                        <div class="p-4">
+                            <div class="mb-2 flex items-center">
+                                <span
+                                    class="text-xs text-cyan-400 font-semibold px-2 py-0.5 border border-cyan-400 rounded-full">
+                                    Portfolio
+                                </span>
+
+                                <div class="flex-1 flex justify-center">
+                                    <a href="https://victor-essine.vercel.app/" target="_blank"
+                                        class="px-2.5 py-0.5 bg-cyan-600 text-white text-xs rounded-md font-medium hover:bg-white hover:text-cyan-600 transition">
+                                        View Live
+                                    </a>
+                                </div>
+                            </div>
+
+                            <p class="text-gray-400 mt-2 text-left text-sm leading-relaxed">
+                                This project showcases my skills in modern web design and development, featuring a
+                                responsive layout and visually engaging interface across all devices.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <!-- Project Card 2 -->
+                    <div class="project-card gradient-border rounded-xl overflow-hidden bg-slate-800">
+                        <!-- Image Section -->
+                        <div class="relative w-full h-52 group">
+                            <img src="Images/Pordigyinternship.png" alt="Landing Home Page"
+                                class="w-full h-full object-cover">
+
+                            <!-- Overlay -->
+                            <div
+                                class="absolute inset-0 bg-gradient-to-b from-black/10 to-cyan-500 flex flex-col justify-center items-center text-center p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                <h4 class="text-xl text-white font-semibold mb-1">Responsive Landing Page</h4>
+                                <p class="text-[15px] text-white mb-12">Prodigy InfoTech Task</p>
+
+                                <a href="https://prodigyintership.vercel.app/" target="_blank"
+                                    aria-label="View My project Live"
+                                    class="flex items-center justify-center w-7 h-7 border border-white/40 rounded-md hover:bg-white/50 transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="2" stroke="white" class="w-3 h-3">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M18 13v6a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 3h6v6m0-6L10 14" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Text Section -->
+                        <div class="p-4">
+                            <div class="mb-2 flex items-center">
+                                <span
+                                    class="text-xs text-cyan-400 font-semibold px-2 py-0.5 border border-cyan-400 rounded-full">
+                                    Responsive Landing Page
+                                </span>
+
+                                <div class="flex-1 flex justify-center">
+                                    <a href="https://prodigyintership.vercel.app/" target="_blank"
+                                        class="px-2.5 py-0.5 bg-cyan-600 text-white text-xs rounded-md font-medium hover:bg-white hover:text-cyan-600 transition">
+                                        View Live
+                                    </a>
+                                </div>
+                                <div class="flex-1 flex justify-center">
+                                    <a href="https://github.com/Victoressine/prodigy_wd_01" target="_blank"
+                                        class="px-2.5 py-0.5 bg-cyan-600 text-white text-xs rounded-md font-medium hover:bg-white hover:text-cyan-600 transition">
+                                        Repo
+                                    </a>
+                                </div>
+                            </div>
+
+                            <p class="text-gray-400 mt-2 text-left text-sm leading-relaxed">
+                                A clean, modern, and user-friendly landing page designed to showcase Codveda
+                                Technologies’
+                                expertise,
+                                services, and innovative digital solutions, with a responsive layout that engages
+                                visitors
+                                and drives
+                                action.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <!-- Project Card 3 -->
+                    <div class="project-card rounded-xl overflow-hidden bg-slate-800">
+                        <div class="relative w-full h-52 group">
+                            <img src="Images/Stopwatch web app.png" alt="Stopwatch Web App"
+                                class="w-full h-full object-cover" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-b from-black/10 to-cyan-500 flex flex-col justify-center items-center text-center p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                <h4 class="text-xl text-white font-semibold mb-1">
+                                    Stopwatch Web App
+                                </h4>
+                                <p class="text-[15px] text-white mb-12">Prodigy InfoTech Task</p>
+                                <a href="https://prodigy-stopwatch-web.vercel.app/" target="_blank"
+                                    aria-label="View Stopwatch Web App Live"
+                                    class="flex items-center justify-center w-7 h-7 border border-white/40 rounded-md hover:bg-white/50 transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="2" stroke="white" class="w-3 h-3">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M18 13v6a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 3h6v6m0-6L10 14" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="p-4">
+                            <div class="mb-2 flex items-center">
+                                <span
+                                    class="text-xs text-cyan-400 font-semibold px-2 py-0.5 border border-cyan-400 rounded-full">
+                                    Stopwatch Web App
+                                </span>
+
+                                <div class="flex-1 flex justify-center">
+                                    <a href="https://prodigy-stopwatch-web.vercel.app/" target="_blank"
+                                        class="px-2.5 py-0.5 bg-cyan-600 text-white text-xs rounded-md font-medium hover:bg-white hover:text-cyan-600 transition">
+                                        View Live
+                                    </a>
+                                </div>
+                            </div>
+
+                            <p class="text-gray-400 mt-2 text-left text-sm leading-relaxed">
+                                A sleek and responsive stopwatch web app with start, pause, reset, and lap-time
+                                functionality, built for accuracy and ease of use across all devices.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <!-- Project Card 4 -->
+                    <div class="project-card rounded-xl overflow-hidden bg-slate-800">
+                        <div class="relative w-full h-52 group">
+                            <img src="Images/Tic-Tac-Toe.png" alt="Tic-Tac-Toe Game"
+                                class="w-full h-full object-cover" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-b from-black/10 to-cyan-500 flex flex-col justify-center items-center text-center p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                <h4 class="text-xl text-white font-semibold mb-1">
+                                    Tic-Tac-Toe Game
+                                </h4>
+                                <p class="text-[15px] text-white mb-12">Prodigy InfoTech Task</p>
+                                <a href="https://tictactoegame-black.vercel.app/" target="_blank"
+                                    aria-label="View Tic-Tac-Toe Game Live"
+                                    class="flex items-center justify-center w-7 h-7 border border-white/40 rounded-md hover:bg-white/50 transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="2" stroke="white" class="w-3 h-3">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M18 13v6a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 3h6v6m0-6L10 14" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="p-4">
+                            <div class="mb-2 flex items-center">
+                                <span
+                                    class="text-xs text-cyan-400 font-semibold px-2 py-0.5 border border-cyan-400 rounded-full">
+                                    Tic-Tac-Toe Game
+                                </span>
+
+                                <div class="flex-1 flex justify-center">
+                                    <a href="https://tictactoegame-black.vercel.app/" target="_blank"
+                                        class="px-2.5 py-0.5 bg-cyan-600 text-white text-xs rounded-md font-medium hover:bg-white hover:text-cyan-600 transition">
+                                        View Live
+                                    </a>
+                                </div>
+                            </div>
+
+                            <p class="text-gray-400 mt-2 text-left text-sm leading-relaxed">
+                                An interactive and responsive Tic-Tac-Toe game with a clean design, smooth gameplay, and
+                                smart logic that lets users play against each other or challenge an AI.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 5 -->
+                    <div class="project-card rounded-xl overflow-hidden bg-slate-800">
+                        <div class="relative w-full h-52 group">
+                            <img src="Images/Codveda 3.png" alt="Counter Web App" class="w-full h-full object-cover" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-b from-black/10 to-cyan-500 flex flex-col justify-center items-center text-center p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                <h4 class="text-xl text-white font-semibold mb-1">Counter App</h4>
+                                <p class="text-[15px] text-white mb-12">
+                                    Codveda Internship Task
+                                </p>
+                                <a href="https://codveda-technologies-counter-app.vercel.app/" target="_blank"
+                                    aria-label="View Counter Web App Live"
+                                    class="flex items-center justify-center w-7 h-7 border border-white/40 rounded-md hover:bg-white/50 transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="2" stroke="white" class="w-3 h-3">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M18 13v6a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 3h6v6m0-6L10 14" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="p-4">
+                            <div class="mb-2 flex items-center justify-between">
+                                <span
+                                    class="text-xs text-cyan-400 font-semibold px-2 py-0.5 border border-cyan-400 rounded-full">
+                                    Counter Web App
+                                </span>
+
+                                <div class="flex gap-2">
+                                    <a href="https://codveda-technologies-counter-app.vercel.app/" target="_blank"
+                                        class="px-2.5 py-0.5 bg-cyan-600 text-white text-xs rounded-md font-medium hover:bg-white hover:text-cyan-600 transition">
+                                        View Live
+                                    </a>
+                                    <a href="https://github.com/Victoressine/Codveda-Technologies-Internship-Level-1---Task-3"
+                                        target="_blank"
+                                        class="px-2.5 py-0.5 bg-cyan-600 text-white text-xs rounded-md font-medium hover:bg-white hover:text-cyan-600 transition">
+                                        Repo
+                                    </a>
+                                </div>
+                            </div>
+
+                            <p class="text-gray-400 mt-2 text-left text-sm leading-relaxed">
+                                The Counter Web App is a user-friendly tool for tracking and managing counts
+                                effortlessly,
+                                featuring a clean, responsive design that works smoothly across all devices. Users can
+                                increment, decrement, and reset the counter with ease for daily tasks or simple
+                                calculations.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <!-- Project Card 6 -->
+                    <div class="project-card rounded-xl overflow-hidden bg-slate-800">
+                        <div class="relative w-full h-52 group">
+                            <img src="Images/Codveda 1.png" alt="Codveda Technologies Landing Page"
+                                class="w-full h-full object-cover" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-b from-black/10 to-cyan-500 flex flex-col justify-center items-center text-center p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                <h4 class="text-xl text-white font-semibold mb-1">
+                                    Codveda Technologies
+                                </h4>
+                                <p class="text-[15px] text-white mb-12">
+                                    Codveda Technologies Landing Home Page
+                                </p>
+                                <a href="https://codveda-technologies-internship-lev.vercel.app/" target="_blank"
+                                    aria-label="View Codveda Landing Page Live"
+                                    class="flex items-center justify-center w-7 h-7 border border-white/40 rounded-md hover:bg-white/50 transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="2" stroke="white" class="w-3 h-3">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M18 13v6a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 3h6v6m0-6L10 14" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="p-4">
+                            <div class="mb-2 flex items-center justify-between">
+                                <span
+                                    class="text-xs text-cyan-400 font-semibold px-2 py-0.5 border border-cyan-400 rounded-full">
+                                    Codveda Landing Page
+                                </span>
+
+                                <div class="flex gap-2">
+                                    <a href="https://codveda-technologies-internship-lev.vercel.app/" target="_blank"
+                                        class="px-2.5 py-0.5 bg-cyan-600 text-white text-xs rounded-md font-medium hover:bg-white hover:text-cyan-600 transition">
+                                        View Live
+                                    </a>
+                                    <a href="https://github.com/Victoressine/Codveda-Technologies-Internship-Level1"
+                                        target="_blank"
+                                        class="px-2.5 py-0.5 bg-cyan-600 text-white text-xs rounded-md font-medium hover:bg-white hover:text-cyan-600 transition">
+                                        Repo
+                                    </a>
+                                </div>
+                            </div>
+
+                            <p class="text-gray-400 mt-2 text-left text-sm leading-relaxed">
+                                A clean, modern, and user-friendly landing page designed to showcase Codveda
+                                Technologies'
+                                expertise, services, and innovative digital solutions, with a responsive layout that
+                                engages
+                                visitors and drives action.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <!-- Project Card 7 -->
+                    <div class="project-card rounded-xl overflow-hidden bg-slate-800">
+                        <div class="relative w-full h-52 group">
+                            <img src="Images/Weather web app.png" alt="NovaTech Website"
+                                class="w-full h-full object-cover" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-b from-black/10 to-cyan-500 flex flex-col justify-center items-center text-center p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                <h4 class="text-xl text-white font-semibold mb-1">
+                                    Weather App
+                                </h4>
+                                <p class="text-[15px] text-white mb-12">Prodigy InfoTech Task</p>
+                                <a href="https://weather-app-dun-gamma.vercel.app/" target="_blank"
+                                    aria-label="View NovaTech Website Live"
+                                    class="flex items-center justify-center w-7 h-7 border border-white/40 rounded-md hover:bg-white/50 transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="2" stroke="white" class="w-3 h-3">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M18 13v6a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 3h6v6m0-6L10 14" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="p-4">
+                            <div class="mb-2 flex items-center">
+                                <span
+                                    class="text-xs text-cyan-400 font-semibold px-2 py-0.5 border border-cyan-400 rounded-full">
+                                    Weather App
+                                </span>
+
+                                <div class="flex-1 flex justify-center">
+                                    <a href="https://weather-app-dun-gamma.vercel.app/" target="_blank"
+                                        class="px-2.5 py-0.5 bg-cyan-600 text-white text-xs rounded-md font-medium hover:bg-white hover:text-cyan-600 transition">
+                                        View Live
+                                    </a>
+                                </div>
+                            </div>
+
+                            <p class="text-gray-400 mt-2 text-left text-sm leading-relaxed">
+                                A simple and reliable Weather App that gives you real-time updates on temperature,
+                                conditions, humidity, and wind speed. Check your local forecast or search any city
+                                worldwide
+                                with ease.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 8 -->
+                    <div class="project-card rounded-xl overflow-hidden bg-slate-800">
+                        <div class="relative w-full h-52 group">
+                            <img src="Images/The Celestial Game .png" alt="NovaTech Website"
+                                class="w-full h-full object-cover" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-b from-black/10 to-cyan-500 flex flex-col justify-center items-center text-center p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                <h4 class="text-xl text-white font-semibold mb-1">
+                                    The Celestial Gateway - Number-guessing Game
+                                </h4>
+                                <p class="text-[15px] text-white mb-12">Codetrain Project</p>
+                                <a href="https://the-celestial-gatewaygame.vercel.app/" target="_blank"
+                                    aria-label="View NovaTech Website Live"
+                                    class="flex items-center justify-center w-7 h-7 border border-white/40 rounded-md hover:bg-white/50 transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="2" stroke="white" class="w-3 h-3">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M18 13v6a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 3h6v6m0-6L10 14" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="p-4">
+                            <div class="mb-2 flex items-center">
+                                <span
+                                    class="text-xs text-cyan-400 font-semibold px-2 py-0.5 border border-cyan-400 rounded-full">
+                                    The Celestial Gateway Game
+                                </span>
+
+                                <div class="flex-1 flex justify-center">
+                                    <a href="https://the-celestial-gatewaygame.vercel.app/" target="_blank"
+                                        class="px-2.5 py-0.5 bg-cyan-600 text-white text-xs rounded-md font-medium hover:bg-white hover:text-cyan-600 transition">
+                                        View Live
+                                    </a>
+                                </div>
+                            </div>
+
+                            <p class="text-gray-400 mt-2 text-left text-sm leading-relaxed">
+                                An interactive number-guessing web app where players test logic and patience, receive
+                                helpful hints, track attempts, and celebrate with animations when the secret number is
+                                discovered.
+                            </p>
+                        </div>
+                    </div>
+
+            </section>
+
+            <hr class="border-gray-800 my-10">
+
+            <!-- WordPress Section -->
+            <section id="wordpress" class="py-12 px-4">
+                <!-- Grid Container -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <!-- Project Card 1 -->
+                    <div class="project-card rounded-xl overflow-hidden bg-slate-800">
+                        <div class="relative w-full h-52 group">
+                            <img src="Images/Eddbie.png" alt="Eddbie Website" class="w-full h-full object-cover" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-b from-black/10 to-cyan-500 flex flex-col justify-center items-center text-center p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                <h4 class="text-xl text-white font-semibold mb-1">Eddbie</h4>
+                                <p class="text-[15px] text-white mb-12">
+                                    Eddbie Educational Training Institute
+                                </p>
+                                <a href="https://eddbie.com/" target="_blank" aria-label="View Eddbie Website Live"
+                                    class="flex items-center justify-center w-7 h-7 border border-white/40 rounded-md hover:bg-white/50 transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="2" stroke="white" class="w-3 h-3">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M18 13v6a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 3h6v6m0-6L10 14" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="p-4">
+                            <div class="mb-2 flex items-center">
+                                <span
+                                    class="text-xs text-cyan-400 font-semibold px-2 py-0.5 border border-cyan-400 rounded-full">
+                                    Eddbie Website
+                                </span>
+
+                                <div class="flex-1 flex justify-center">
+                                    <a href="https://eddbie.com/" target="_blank"
+                                        class="px-2.5 py-0.5 bg-cyan-600 text-white text-xs rounded-md font-medium hover:bg-white hover:text-cyan-600 transition">
+                                        View Live
+                                    </a>
+                                </div>
+                            </div>
+
+                            <p class="text-gray-400 mt-2 text-left text-sm leading-relaxed">
+                                Eddbie Website is a modern, responsive WordPress site designed to provide flexible and
+                                accessible educational programs. It features intuitive navigation, detailed course
+                                listings,
+                                and interactive elements to create an engaging learning experience.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#1f2937] text-white py-12 mt-16 relative" data-aos="fade-up">
+        <div class="max-w-7xl mx-auto px-4">
+            <!-- Copyright -->
+            <div class="text-center text-cyan-400 text-sm">
+                &copy; <span id="currentYear"></span> Victor Essine Obioha. All Rights Reserved.
+            </div>
+        </div>
+
+        <!-- Back to Top Button -->
+        <a href="#home" id="backToTop" class="fixed bottom-6 right-6 sm:bottom-8 sm:right-8 
+         bg-cyan-400 text-[#1f2937] w-10 h-10 
+         flex items-center justify-center
+         rounded-lg shadow-lg hover:bg-cyan-500 
+         transition-opacity duration-300 
+         opacity-0 pointer-events-none z-50">
+
+            <i class='bx bxs-chevrons-up text-lg'></i>
+        </a>
+
+
+        <script>
+            // Auto year
+            const yearEl = document.getElementById('currentYear');
+            if (yearEl) {
+                yearEl.textContent = new Date().getFullYear();
+            }
+
+            // Back to Top button
+            const backToTop = document.getElementById("backToTop");
+
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > 200) {
+                    backToTop.classList.remove("opacity-0", "pointer-events-none");
+                    backToTop.classList.add("opacity-100");
+                } else {
+                    backToTop.classList.add("opacity-0", "pointer-events-none");
+                    backToTop.classList.remove("opacity-100");
+                }
+            });
+
+            backToTop.addEventListener("click", (e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            });
+        </script>
+
+        <!-- Smooth Scroll Script -->
+        <script>
+            document.getElementById("backToTop").addEventListener("click", function (e) {
+                e.preventDefault(); // Stop default jump behavior
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth" // Smooth scroll effect
+                });
+            });
+        </script>
+    </footer>
+</body>
+
+</html>
