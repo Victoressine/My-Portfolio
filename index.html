@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8" />
@@ -46,13 +46,14 @@
   </style>
 </head>
 
-<body class="bg-slate-900 text-white scroll-smooth">
+<body class="bg-slate-900 text-white">
+
   <!-- ================= HEADER ================= -->
-  <header
+  <header id="home"
     class="fixed top-0 left-0 w-full z-50 px-6 md:px-20 py-4 flex bg-[#1f2937] justify-between items-center shadow-md">
     <!-- Logo / Name -->
     <a href="#home"
-      class="text-2xl sm:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-cyan-400 to-yellow-400 bg-clip-text text-transparent">
+      class="text-2xl sm:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-cyan-400 to-yellow-400 bg-clip-text text-transparent font-serif">
       Victor Essine Obioha
     </a>
 
@@ -62,7 +63,7 @@
     </button>
 
     <!-- Desktop Menu (Hidden on mobile & tablet) -->
-    <nav class="hidden lg:flex space-x-8 text-lg">
+    <nav class="hidden lg:flex space-x-8 text-lg font-serif">
       <a href="#home" class="hover:text-cyan-400">Home</a>
       <a href="#about" class="hover:text-cyan-400">About</a>
       <a href="#skills" class="hover:text-cyan-400">Skills</a>
@@ -72,7 +73,7 @@
 
     <!-- Moblie / Tablet Siderbar Menu -->
     <nav id="mobile-menu"
-      class="fixed top-0 left-0 h-full w-64 bg-gray-900 text-white flex flex-col space-y-6 py-10 px-6 transform -translate-x-full transition-transform duration-300 lg:hidden z-40">
+      class="fixed top-0 left-0 h-full w-64 bg-gray-900 text-white flex flex-col space-y-6 py-10 px-6 transform -translate-x-full transition-transform duration-300 lg:hidden z-40 font-serif">
       <a href="#home" class="block text-cyan-300 hover:text-cyan-400 font-semibold">Home</a>
       <a href="#about" class="block hover:text-cyan-400">About</a>
       <a href="#skills" class="block hover:text-cyan-400">Skills</a>
@@ -127,14 +128,16 @@
   </script>
 
   <!-- MAIN CONTENT WRAPPER (sets global max width for sections) -->
+
   <main id="main-content" class="max-w-[90rem] mx-auto">
+
     <!-- =============== HOME SECTION =============== -->
     <section id="home"
       class="min-h-[85vh] pt-20 md:pt-24 px-6 md:px-20 lg:px-40 flex flex-col md:flex-row items-center gap-10">
       <!-- Text Content -->
       <div class="flex-1">
-        <h2 class="text-lg sm:text-xl mb-4">Hi There!</h2>
-        <h1 class="text-3xl sm:text-4xl font-bold leading-tight mb-2">
+        <h2 class="text-lg sm:text-xl mb-4 font-serif">Hi There!</h2>
+        <h1 class="text-3xl sm:text-4xl font-bold leading-tight mb-2 font-serif">
           I'm Victor
         </h1>
         <h2 class="text-lg sm:text-xl mb-6">
@@ -173,7 +176,7 @@
           });
         </script>
 
-        <p class="text-base sm:text-lg leading-relaxed mb-4">
+        <p class="text-base sm:text-xl leading-relaxed font-serif mb-4">
           Building modern, responsive websites and data-driven digital
           strategies that help businesses grow and stand out online.
         </p>
@@ -188,9 +191,9 @@
             class="transform transition-transform duration-300 hover:scale-125">
             <i class="bx bxl-whatsapp text-3xl text-green-500"></i>
           </a>
-          <a href="mailto:victoressine.sunday97@gmail.com"
+          <a href="https://www.instagram.com/" target="_blank"
             class="transform transition-transform duration-300 hover:scale-125">
-            <i class="bx bx-envelope text-3xl text-red-500"></i>
+            <i class="bx bxl-instagram text-3xl text-pink-500"></i>
           </a>
           <a href="https://www.linkedin.com/in/victor-e-obioha-117462254/" target="_blank"
             class="transform transition-transform duration-300 hover:scale-125">
@@ -201,12 +204,6 @@
             <i class="bx bxl-github text-3xl text-gray-300"></i>
           </a>
         </div>
-
-        <!-- Resume Button -->
-        <a href="#"
-          class="inline-block bg-cyan-400 text-[#323946] font-semibold px-6 py-2 rounded-full shadow transform transition-transform duration-300 hover:scale-105">
-          View Resume
-        </a>
       </div>
 
       <!-- Profile Image (animated floating circle) -->
@@ -223,7 +220,7 @@
     <section id="about" class="py-24 px-6 md:px-[8%] text-white">
       <!-- Section Heading -->
       <h2 class="text-3xl sm:text-4xl font-bold text-center mb-10">
-        <span class="border-b-4 border-cyan-400 pb-2 inline-block">
+        <span class="border-b-4 border-cyan-400 pb-2 inline-block font-serif">
           About <span class="text-cyan-400">Me</span>
         </span>
       </h2>
@@ -238,18 +235,15 @@
 
         <!-- About Text -->
         <div class="max-w-2xl text-left flex flex-col justify-center">
-          <p class="text-base sm:text-lg mb-8 leading-relaxed">
-            I am an IT Specialist and Web Developer with expertise in
-            front-end development, digital marketing, lead generation, and
-            data management. I design and build responsive, SEO-optimised
-            websites using HTML, Tailwind CSS, JavaScript, and React, applying
-            data-driven strategies to help businesses strengthen their digital
-            presence. By combining technical skills with marketing insight, I
-            deliver digital solutions that enhance engagement, improve user
-            experience, and drive measurable growth.
+          <p class="text-base sm:text-xl mb-8 leading-relaxed font-serif">
+            I'm an IT Specialist and Web Developer with expertise in front-end development, social media management,
+            digital marketing, and data management. I design and build responsive, SEO-optimised websites using HTML,
+            Tailwind CSS, JavaScript, and React, applying data-driven strategies to help businesses strengthen their
+            digital presence. By combining technical skills with marketing insight, I deliver digital solutions that
+            enhance engagement, improve user experience, and drive measurable growth.
           </p>
 
-          <p class="text-base sm:text-lg mb-8 leading-relaxed">
+          <p class="text-base sm:text-xl mb-8 leading-relaxed font-serif">
             I'm open to collaboration and innovative opportunities while
             advancing my skills through hands-on training at
             <strong>Codetrain Africa.</strong>
@@ -263,8 +257,8 @@
           <!-- Read More Button -->
           <div>
             <a href="#about"
-              class="group inline-flex items-center gap-2 px-6 py-2 border-2 border-white rounded-xl transition-transform duration-300 hover:bg-slate-800 hover:text-cyan-600">
-              <span class="transform transition-transform duration-300 group-hover:translate-x-2">
+              class="group inline-flex items-center gap-2 px-6 py-2 border-2 border-white text-lg rounded-xl transition-transform duration-300 hover:bg-slate-800 hover:text-cyan-600">
+              <span class="transform transition-transform duration-300 group-hover:translate-x-2 font-serif">
                 Read More
               </span>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
@@ -297,9 +291,10 @@
 
     <!-- =============== SKILLS SECTION =============== -->
     <section id="skills" class="py-20 px-6 md:px-16 text-center">
+
       <!-- Heading -->
       <h2 class="text-3xl sm:text-4xl font-bold mb-10 text-white">
-        <span class="border-b-4 border-cyan-400 text-cyan-400">Skills</span>
+        <span class="border-b-4 border-cyan-400 text-cyan-400 font-serif">Skills</span>
       </h2>
 
       <!-- Skills Cards Container -->
@@ -311,20 +306,18 @@
         const skills = [
           { name: "HTML", icon: "Images/html.svg", percent: 95 },
           { name: "CSS", icon: "Images/css.svg", percent: 95 },
-          { name: "Tailwind", icon: "Images/tailwind.svg", percent: 95 },
-          { name: "JavaScript", icon: "Images/javascript.svg", percent: 45 },
+          { name: "Tailwind CSS", icon: "Images/tailwind.svg", percent: 95 },
+          { name: "JavaScript", icon: "Images/javascript.svg", percent: 65 },
           { name: "React", icon: "Images/react.svg", percent: 50 },
           { name: "VSCode", icon: "Images/vscode.svg", percent: 80 },
           { name: "GitHub", icon: "Images/Github.svg", percent: 70 },
-          { name: "BootStrap", icon: "Images/bootstrap.svg", percent: 20 },
+          { name: "BootStrap", icon: "Images/bootstrap.svg", percent: 40 },
           { name: "SQL", icon: "Images/sql.svg", percent: 30 },
           { name: "Data Management", icon: "Images/data-management.svg", percent: 95, },
           { name: "Web Design", icon: "Images/web-design.svg", percent: 80 },
           { name: "Web Development", icon: "Images/web-development.svg", percent: 60, },
-          { name: "LinkedIn Campaign", icon: "Images/linkedin-campaign.svg", percent: 70, },
-          { name: "Lead Generation", icon: "Images/lead-generation.svg", percent: 90, },
+          { name: "Social Media Management", icon: "Images/linkedin-campaign.svg", percent: 70, },
           { name: "Digital Marketing", icon: "Images/digital-marketing.svg", percent: 85, },
-          { name: "Email Marketing", icon: "Images/email-marketing.svg", percent: 85, },
         ];
 
         // Render Skills on DOM load
@@ -380,7 +373,7 @@
     <section id="project" class="py-20 px-6 md:px-16">
       <!-- Heading -->
       <h2 class="text-3xl sm:text-4xl font-bold text-center text-white mb-10">
-        <span class="border-b-4 border-cyan-400 text-cyan-400">Projects</span>
+        <span class="border-b-4 border-cyan-400 text-cyan-400 font-serif">Projects</span>
       </h2>
 
       <!-- Projects Grid -->
@@ -600,9 +593,9 @@
       <!-- View More Projects Button with Border -->
       <div class="flex justify-center mb-8">
         <a href="projects.html"
-          class="group inline-flex items-center gap-2 px-6 py-2 border-2 border-white rounded-xl transition-transform duration-300 hover:bg-slate-800 hover:text-cyan-600">
+          class="group inline-flex text-lg items-center gap-2 px-6 py-2 border-2 border-white rounded-xl transition-transform duration-300 hover:bg-slate-800 hover:text-cyan-600">
           <!-- Text that moves -->
-          <span class="transform transition-transform duration-300 group-hover:translate-x-2">
+          <span class="transform transition-transform font-serif duration-300 group-hover:translate-x-2">
             View More Projects
           </span>
 
@@ -622,7 +615,7 @@
     <section id="getInTouch" class="py-16 px-6 md:px-16 text-white">
       <!-- Section Heading -->
       <h2 class="text-3xl sm:text-4xl font-bold text-center mb-10">
-        <span class="border-b-4 border-cyan-400 text-cyan-400">Get In Touch</span>
+        <span class="border-b-4 border-cyan-400 text-cyan-400 font-serif">Get In Touch</span>
       </h2>
 
       <!-- Contact Form -->
@@ -630,47 +623,47 @@
         action="https://formspree.io/f/mblkpjgy" method="POST">
         <!-- Name Field -->
         <div>
-          <label for="name" class="block text-sm font-medium mb-2">Name</label>
+          <label for="name" class="block text-lg font-medium font-serif mb-2">Name</label>
           <input type="text" id="name" name="name" placeholder="Your name" required
             class="w-full px-4 py-2 bg-gray-800 text-white rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-cyan-400" />
         </div>
 
         <!-- Email Field -->
         <div>
-          <label for="email" class="block text-sm font-medium mb-2">Email</label>
+          <label for="email" class="block text-lg font-medium font-serif mb-2">Email</label>
           <input type="email" id="email" name="email" placeholder="Your email" required
             class="w-full px-4 py-2 bg-gray-800 text-white rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-cyan-400" />
         </div>
 
         <!-- Message Field -->
         <div>
-          <label for="message" class="block text-sm font-medium mb-2">Message</label>
+          <label for="message" class="block text-lg font-medium font-serif mb-2">Message</label>
           <textarea id="message" name="message" rows="4" placeholder="Your message" required
             class="w-full px-4 py-2 bg-gray-800 text-white rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-cyan-400"></textarea>
         </div>
 
         <!-- Submit Button -->
         <button type="submit"
-          class="w-full bg-cyan-400 text-[#0f172a] font-semibold py-2 rounded-md hover:bg-cyan-300 transition">
+          class="w-full bg-cyan-400 text-[#0f172a] font-serif font-semibold py-2 rounded-md hover:bg-cyan-300 transition">
           Submit
         </button>
 
         <!-- OR Separator -->
         <div class="flex items-center justify-center gap-4 my-4">
           <hr class="w-1/4 border-gray-600" />
-          <span class="text-gray-400 text-sm">OR</span>
+          <span class="text-gray-400 text-sm font-serif">OR</span>
           <hr class="w-1/4 border-gray-600" />
         </div>
 
         <!-- Social Links (Contact Section) -->
-        <div class="flex justify-center items-center space-x-6">
+        <div class="flex justify-center items-center space-x-4">
           <a href="https://wa.me/233595068294" target="_blank"
             class="transform transition-transform duration-300 hover:scale-125">
             <i class="bx bxl-whatsapp text-3xl text-green-500"></i>
           </a>
-          <a href="mailto:victoressine.sunday97@gmail.com"
+          <a href="https://www.instagram.com/" target="_blank"
             class="transform transition-transform duration-300 hover:scale-125">
-            <i class="bx bx-envelope text-3xl text-red-500"></i>
+            <i class="bx bxl-instagram text-3xl text-pink-500"></i>
           </a>
           <a href="https://www.linkedin.com/in/victor-e-obioha-117462254/" target="_blank"
             class="transform transition-transform duration-300 hover:scale-125">
@@ -682,11 +675,21 @@
           </a>
         </div>
 
-        <!-- Phone Number  -->
-        <div class="flex items-center justify-center gap-2 my-4">
-          <i class="bx bx-phone text-2xl text-white"></i>
-          <span class="text-gray-400 text-sm">+233 (0) 595068294</span>
+        <div class="flex items-center justify-center gap-4 text-gray-400 text-sm">
+          <!-- Phone -->
+          <div class="flex items-center gap-1">
+            <i class="bx bx-phone text-white text-xl"></i>
+            <span class="font-serif">+233 (0) 595 068 294</span>
+          </div>
+
+          <!-- Email -->
+          <div class="flex items-center gap-1">
+            <i class="bx bx-mail-send text-white text-xl"></i>
+            <span class="font-serif">victoressine.sunday97@gmail.com</span>
+          </div>
         </div>
+
+
       </form>
     </section>
   </main>
@@ -695,7 +698,7 @@
   <footer class="bg-[#1f2937] text-white py-12 mt-16 relative">
     <div class="max-w-7xl mx-auto px-4">
       <!-- Copyright -->
-      <div class="text-center text-cyan-400 text-sm">
+      <div class="text-center font-serif text-cyan-400 text-sm">
         &copy; <span id="currentYear"></span> Victor Essine Obioha. All Rights
         Reserved.
       </div>
